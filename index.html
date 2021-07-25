@@ -14,7 +14,7 @@
 <body>
     <!-- header start -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="">
@@ -30,13 +30,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subcribe</a>
+                            <a class="nav-link" href="#subscribe">Subcribe</a>
                         </li>
 
                     </ul>
@@ -136,7 +136,8 @@
         </section>
 
         <!-- products -->
-        <section class="container pb-5">
+        <!-- shaw section -->
+        <section class="container pb-5" id="shoes">
             <h1>Shoes</h1>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -181,9 +182,9 @@
                 </div>
             </div>
         </section>
-
-        <section class="container pb-5">
-            <h1>Bags</h1>
+        <!-- beg section -->
+        <section class="container pb-5" id="backpack">
+            <h1>Backpack</h1>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
                     <div class="card border-0 shadow h-100 ">
@@ -219,25 +220,32 @@
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This card has even longer content than the first to show that equal
                                 height action.</p>
+
                         </div>
                         <div class="p-3">
+                            <h5>$120</h5>
                             <button type="button" class="btn btn-warning">Buy Now >></button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-
-
-
+        <!-- subscribe -->
+        <section style="height: 300px;" id="subscribe" class="container d-flex justify-content-center bg-info
+        align-items-center rounded-3">
+            <DIv>
+                <h1>LET'S STAY IN TOUCH</h1>
+                <p>Get updates on sales, specials and more</p>
+                <input type="text" placeholder="Your Email">
+                <br>
+                <button class=" btn-warning">SUBMIT
+                </button>
+            </DIv>
+        </section>
     </main>
-    <footer>
+    <footer class=" mt-5 text-center">
+        <p><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small> </p>
+
 
     </footer>
     <!-- bootstarp script -->
